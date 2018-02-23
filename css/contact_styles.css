@@ -1,0 +1,27 @@
+h1 {
+  color: #9c3553;
+}
+h3 {
+  color: #9c3553;
+}
+body {
+  background-color: #D8EFFE
+  ;
+}
+.h1background {
+  padding: 40px;
+  background-color: #D8EFFE;
+}
+.quicksand {
+  font-family: "quicksand", sans-serif;
+}
+.shadow {
+  box-shadow: 5px 15px 5px 5px rgba(0, 0, 0, 0.8);
+}
+.column {
+  display: inline-block;
+  width:100%;}
+.trees {
+  max-width: 100%;
+}
+1e394c

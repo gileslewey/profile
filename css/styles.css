@@ -1,0 +1,11 @@
+.jumbotron {
+  background-image: url("../img/greensky.jpg");
+  background-size: cover;}
+
+.jumbotron p {
+  color: white;
+}
+
+.jumbotron h1 {
+  color: #ea3103;
+}
