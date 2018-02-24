@@ -5,7 +5,7 @@
 }
 .header h1 {
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 .column {
   display: inline-block;
@@ -17,10 +17,10 @@
   clear: both;
 }
 .image img {
-
+border: 1px solid #73450C;
 }
 .intro {
-  padding: 0 5% 0 5%;
+  padding: 0 5% 0 3%;
 
 }
 .intro p {
@@ -31,14 +31,15 @@
 }
 /*Typography*/
 
+
 h1,
 h2,
 h3 {
-  font-family: futura, helvetica, arial, sans-serif;
+  font-family: PT Sans, helvetica, arial, sans-serif;
 }
 p,
 li {
-  font-family: georgia, palatino, cambria, serif;
+  font-family: Mukta Mahee, palatino, cambria, serif;
 }
 .skills h3 {
   text-align: center;
@@ -49,10 +50,10 @@ li {
 }
 body {
   background-color: #fffeea;
-  color: #34495e;
+  color: #73450C;
 }
 .skills {
-  background-color: #5AD4C2;
+  background-color: #ABA332;
   color: #FFF;
 }
 .inline {
