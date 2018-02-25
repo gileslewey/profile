@@ -6,6 +6,7 @@
 .header h1 {
   text-align: center;
   padding-bottom: 3%;
+  padding-top: 70px;
 }
 .column {
   display: inline-block;
@@ -21,7 +22,6 @@ border: 1px solid #73450C;
 }
 .intro {
   padding: 0 5% 0 3%;
-
 }
 .intro p {
   -webkit-margin-before: 0;
@@ -30,8 +30,6 @@ border: 1px solid #73450C;
   padding: 20% 0;
 }
 /*Typography*/
-
-
 h1,
 h2,
 h3 {
@@ -58,4 +56,33 @@ body {
 }
 .inline {
   display: inline-block;
+}
+.nav a {
+  display: inline-block;
+  float: right;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 20px 10px 20px;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+.nav a:hover {
+  color:#73450C;
+  text-decoration: none;
+}
+.nav ul li {
+  display: inline-block;
+  float: right;
+    padding-right: 2%;
+}
+.nav ul li a {
+  display: inline-block;
+  float: right;
+}
+.nav {
+  background-color: #ABA332;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
