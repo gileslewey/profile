@@ -15,7 +15,15 @@
   margin-right: 3%;
 }
 .row p {
-  color: #73450C
+  color: #73450C;
+}
+.carousel-caption p,
+.carousel-caption h3 {
+  color: #FFF;
+}
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 h2 {
   color: #73450C;
@@ -27,6 +35,12 @@ h3 {
 }
 p {
     font-family: Mukta Mahee, palatino, cambria, serif;
+}
+.down {
+  margin-bottom: -50px;
+}
+.up {
+  margin-bottom: 46%;
 }
 /**** Contact Styles ****/
 h1 {
@@ -82,7 +96,7 @@ li {
 .nav a {
   display: inline-block;
   float: right;
-  color: white;
+  color: #FFF;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 20px 10px 20px;
@@ -94,6 +108,10 @@ li {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
+  background:rgba(171,163,50,0.6);
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .nav a:hover {
   color:#73450C;
@@ -102,7 +120,7 @@ li {
 .nav ul li {
   display: inline-block;
   float: right;
-    padding-right: 2%;
+  padding-right: 2%;
 }
 .nav ul li a {
   display: inline-block;

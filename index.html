@@ -25,18 +25,79 @@
   <body>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
+    <!--
     <div class="jumbotron" style="background-color:#e8ecf7">
       <div class="container">
         <h1>Giles Lewey. Full Stack Developer.</h1>
         <p><strong>Seeing the forest <i>and</i> the trees.</strong></p>
         <a href="about.html">About Me<br></a>
         <a href="contact.html">Contact<br></a>
-        <a href="FAQ.html">FAQ</a>
+        <a href="FAQ.html">FAQ</a>-->
       </div><!-- /container -->
     </div><!-- /jumbotron -->
 
-    <div class="container">
+    <div class="container-fluid">
+    <div class="nav">
+      <ul>
+        <li><a href="about.html"><span class="glyphicon glyphicon-picture"></span>  About</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-eye-open"></span>  Work</a></li>
+        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span>  Contact</a></li>
+        <li><a href="faq.html"><span class="glyphicon glyphicon-question-sign"></span>  FAQ</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+      </ul>
+    </div><!--end nav-->
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/carouseltrees.jpg" alt="Hero Image Two">
+          <div class="carousel-caption">
+            <div class="up">
+              <h3>Seeing the forest <i>and</i> the trees.</h3>
+              <p>Lipsum...</p>
+            </div><!--end up-->
+          </div><!--caption-->
+        </div>
+        <div class="item">
+          <img src="img/roundpeg.jpg" alt="Hero Image One">
+          <div class="carousel-caption">
+            <h3>The <i>right</i> peg for the right hole</h3>
+            <p>Lipsum...</p>
+      </div>
+      </div>
+        <div class="item">
+          <img src="img/tools.jpg" alt="Hero Image One">
+          <div class="carousel-caption">
+            <div class="down">
+              <h3><i>All</i> the tools for <i>all</i> the jobs</h3>
+            </div><!--end down-->
+         </div>
+       </div>
+        ...
+    </div><!--end carousel-->
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
       <!-- Example row of columns -->
+      <div class="container">
       <div class="row">
         <div class="col-md-4">
           <h2>Portfolio Concept:</h2>
@@ -54,12 +115,12 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /col -->
       </div><!-- /row -->
+    </div><!--endcontainer-->
 
-      <hr>
 
 
-    </div> <!--container -->
 
+  </div><!--endcontainerfluid-->
 
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->

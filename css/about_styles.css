@@ -67,6 +67,14 @@ body {
   transition: color 600ms;
   -webkit-transition: color 600ms;
 }
+.nav {
+  background-color: #ABA332;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background:rgba(171,163,50,0.6);
+}
 .nav a:hover {
   color:#73450C;
   text-decoration: none;
@@ -79,10 +87,4 @@ body {
 .nav ul li a {
   display: inline-block;
   float: right;
-}
-.nav {
-  background-color: #ABA332;
-  position: fixed;
-  width: 100%;
-  top: 0;
 }
