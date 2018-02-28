@@ -14,6 +14,7 @@
   padding-top: 70px;
   margin-right: 3%;
 }
+
 .row p {
   color: #73450C;
 }
@@ -48,12 +49,10 @@ h1 {
   padding-bottom: 5%;
   color: #73450C;
   margin-right:3%;
-  padding-top: 70px;
+  padding-top: 7%;
 }
 h3 {
   text-align: center;
-  padding: 5%;
-  color: #fff;
 }
 h2 {
   color: #73450C;
@@ -62,21 +61,24 @@ h2 {
 p {
   color: #fff;
 }
-.column {
-  display: inline-block;
-  float: left;
-  width: 30%;
-  background-color: #ABA332;
-  color: #FFF;
-  margin-left: 2%;
+h4 {
+  text-align: center;
+  /*padding: 5%;*/
+  color: #fff;
 }
-.column p {
-  padding: 5%;
+.pcolor {
+  clear: both;
+  color: #73450C;
 }
+.h3top {
+  padding-top: 5%;
+}
+/*
 .clear {
   background-color: initial;
   margin-right: 5%;
 }
+*/
 .shadow {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
   margin: 0 0 5% 0;
@@ -93,6 +95,7 @@ p,
 li {
   font-family: Mukta Mahee, palatino, cambria, serif;
 }
+/*pixels*/
 .nav a {
   display: inline-block;
   float: right;
@@ -103,6 +106,7 @@ li {
   transition: color 600ms;
   -webkit-transition: color 600ms;
 }
+/*pixels*/
 .nav {
   background-color: #ABA332;
   position: fixed;
@@ -110,8 +114,6 @@ li {
   top: 0;
   z-index: 1;
   background:rgba(171,163,50,0.6);
-  margin-left: -15px;
-  margin-right: -15px;
 }
 .nav a:hover {
   color:#73450C;
@@ -137,4 +139,41 @@ li {
 .panel-title {
   font-family: PT Sans, helvetica, arial, sans-serif;
   color: #fff;
+}
+/*about page*/
+
+#about-intro {
+  -webkit-margin-before: 0;
+  font-size: 3em;
+  font-weight: 100;
+  margin: 5% 0;
+  color: #73450C;
+}
+#about-skills h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+#skill-list {
+  margin-left: 50px;
+}
+
+#about-skills {
+  background-color: #ABA332;
+  color: #FFF;
+}
+/* bootstrap */
+
+@media (max-width: 880px) {
+  body {
+    background-color: red;
+  }
+}
+.mdMargin {
+  margin: 3% 3%;
+}
+.img-right {
+  margin-right: -2%;
+}
+.img-left {
+  margin-right: +2%;
 }
