@@ -7,7 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Giles Lewey. Full Stack Developer.</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -22,7 +23,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <!--
@@ -33,20 +34,34 @@
         <a href="about.html">About Me<br></a>
         <a href="contact.html">Contact<br></a>
         <a href="FAQ.html">FAQ</a>-->
-      </div><!-- /container -->
-    </div><!-- /jumbotron -->
+      <!--</div>
+          </div>-->
 
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header"></div>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="projectName navbar-brand">
+            <p><a href="#">Giles Lewey</a></p>
+          </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav nav navbar-nav navbar-right">
+            <li><a href="#about"><span class="glyphicon glyphicon-picture"></span>  About</a></li>
+            <li><a href="#work"><span class="glyphicon glyphicon-eye-open"></span>  Work</a></li>
+            <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span>  Contact</a></li>
+            <li><a href="#faq"><span class="glyphicon glyphicon-question-sign"></span>  FAQ</a></li>
+            <li><a href="#index"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+          </ul>
+        </div><!--end nav collapse-->
+      </div><!--end container-->
+    </nav><!--end nav-->
 
-    <div class="nav">
-      <ul>
-        <li><a href="about.html"><span class="glyphicon glyphicon-picture"></span>  About</a></li>
-        <li><a href="work.html"><span class="glyphicon glyphicon-eye-open"></span>  Work</a></li>
-        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span>  Contact</a></li>
-        <li><a href="faq.html"><span class="glyphicon glyphicon-question-sign"></span>  FAQ</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
-      </ul>
-    </div><!--end nav-->
-
+    <div class="container-fluid anchor" id="index"></div>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -56,33 +71,24 @@
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner" role="listbox" id="home">
         <div class="item active">
           <img src="img/carouseltrees.jpg" alt="Hero Image Two">
-          <div class="carousel-caption">
-            <div class="up">
-              <h3>Seeing the forest <i>and</i> the trees.</h3>
-              <p>Lipsum...</p>
-            </div><!--end up-->
-          </div><!--caption-->
-        </div>
+        </div><!--end item active-->
+        <div class="carousel-caption">
+          <div class="up">
+            <h3>Seeing the forest <i>and</i> the trees.</h3>
+            <p>Lipsum...</p>
+          </div><!--end up-->
+        </div><!--caption-->
+
         <div class="item">
           <img src="img/roundpeg.jpg" alt="Hero Image One">
-          <div class="carousel-caption">
-            <h3>The <i>right</i> peg for the right hole</h3>
-            <p>Lipsum...</p>
-      </div>
-      </div>
+        </div><!--end item-->
         <div class="item">
           <img src="img/tools.jpg" alt="Hero Image One">
-          <div class="carousel-caption">
-            <div class="down">
-              <h3><i>All</i> the tools for <i>all</i> the jobs</h3>
-            </div><!--end down-->
-         </div>
-       </div>
-        ...
-    </div><!--end carousel-->
+        </div><!--end item-->
+      </div><!--end carousel-->
 
       <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -96,8 +102,7 @@
     </div>
 
 
-      <!-- Example row of columns -->
-      <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
           <h2>Portfolio Concept:</h2>
@@ -108,7 +113,7 @@
           <h2>Project Goals:</h2>
           <p>Time commitment will be 40 hours a week. A personal deadline is June 10th (birthday).
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div><!-- /col -->
+        </div><!-- /col -->
         <div class="col-md-4">
           <h2>Course Goals:</h2>
           <p>I'm changing careers. Hopefully fifteen years as lead proofreader at a financial printing company will give some value-added. I worked with a start-up for three years and have some artistic and design background. This will either be the start of a new career or a pragmatic stepping-stone.</p>
@@ -117,11 +122,122 @@
       </div><!-- /row -->
     </div><!--endcontainer-->
 
+    <div class="container-fluid">
+      <h1 id="faq"><strong>Frequently Asked Questions</strong></h1>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              <strong>What is a "full stack" developer?</strong>
+              </a>
+            </h4>
+          </div><!--end panel-head-->
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div><!--end panel-->
+          </div><!--end id-->
+        </div><!--end panel-default-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+              <strong>Why coding?</strong>
+              </a>
+            </h4>
+          </div><!--end panel-head-->
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div><!--end panel-body-->
+        </div><!--end id-->
+      </div><!--end panel-->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            <strong>Do you have other skills?</strong>
+            </a>
+          </h4>
+        </div><!--end panel-head-->
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div><!--end panel-body-->
+      </div><!--end id-->
+    </div><!--end panel-->
+  </div><!--end panel group-->
+</div><!-- end fluid-container-->
 
+<div class="container-fluid" id="contact">
+  <h1><strong class="white">Contact Me</strong></h1>
+  <div class="col-md-4 img-right">
+    <img src="img/BWprofile.jpg" class="shadow img-right" alt="black and white profile pic">
+  </div><!--end column-->
+  <div class="col-md-4 img-left">
+    <!--<img src="img/Min.jpg" class="img-responsive"  alt="skyline">-->
+    <h2 class="white"><strong> Mailing Address:</strong><br>
+      718 Portland Ave. South<br>
+      Unit E<br>
+      St. Paul, MN 55104</h2>
+  </div><!--end column-->
+  <div class="col-md-4 class="mdMargin"" id="about-skills">
+    <h3>gileslewey@gmail.com</h3>
+    <p>Lorem ipsum dolor amet williamsburg pickled minim bicycle rights. Flannel messenger bag aute single-origin coffee pariatur laborum eiusmod officia hell of deep v. Lumbersexual flexitarian ad shaman tofu. Irure intelligentsia keytar, stumptown chicharrones nulla ethical adipisicing bitters. Enamel pin gochujang cillum chia.
 
+    Cillum disrupt prism, tempor fashion axe chicharrones ipsum umami kale chips +1 nisi esse copper mug biodiesel. Migas fam tempor occaecat edison bulb proident hell of af. Raw denim vegan tumblr.
 
+    </p>
+  </div><!--end column-->
+</div><!-- end container-fluid-->
 
+<div class="container-fluid">
+  <div class="row navbelow">
+    <div class="col-xs-12" id="work"><h1>Work</h1></div>
+    <div class="col-md-3 col-xs-6"><img src="img/rook.jpg" class="mdMargin img-responsive"></div>
+    <div class="col-md-3 col-xs-6"><img src="img/rook.jpg" class="mdMargin img-responsive"></div>
+    <div class="col-md-3 col-xs-6"><img src="img/rook.jpg" class="mdMargin img-responsive"></div>
+    <div class="col-md-3 col-xs-6"><img src="img/rook.jpg" class="mdMargin img-responsive"></div>
+    <div class="col-md-3 col-xs-6"><img src="img/rook.jpg" class="mdMargin img-responsive"></div>
+    <div class="col-md-3 col-xs-6"><img src="img/rook.jpg" class="mdMargin img-responsive"></div>
+    <div class="col-md-3 col-xs-6"><img src="img/rook.jpg" class="mdMargin img-responsive"></div>
+    <div class="col-md-3 col-xs-6"><img src="img/rook.jpg" class="mdMargin img-responsive"></div>
+  </div><!--end work-->
+</div><!--end container fluid-->
 
+<div class="container-fluid">
+  <div class="header" id="h1about">
+    <h1 id="about"><strong>About Me</strong></h1>
+  </div><!-- end of h1header -->
+  <div class="col-md-4">
+    <img src="img/profile.jpg" alt="best coder ever">
+  </div><!-- end of image -->
+  <div class="col-md-4" id="about-intro">
+    <p class="pcolor">Seeing the forest <i>and</i> the trees.</p>
+  </div><!-- end intro column -->
+
+  <div class="col-md-4" id="about-skills">
+    <h3>Skills</h3>
+    <ul id="skill-list">
+      <li>Talent one</li>
+      <li>Talent two</li>
+      <li>Talent three</li>
+    </ul>
+  </div><!-- end skills column-->
+  <div class="main-text">
+    <h3 class="pcolor h3top"><strong>More About Me</strong></h3>
+    <p class="pcolor">Lorem ipsum dolor amet williamsburg pickled minim bicycle rights. Flannel messenger bag aute single-origin coffee pariatur laborum eiusmod officia hell of deep v. Lumbersexual flexitarian ad shaman tofu. Irure intelligentsia keytar, stumptown chicharrones nulla ethical adipisicing bitters. Enamel pin gochujang cillum chia.
+
+Cillum disrupt prism, tempor fashion axe chicharrones ipsum umami kale chips +1 nisi esse copper mug biodiesel. Migas fam tempor occaecat edison bulb proident hell of af. Raw denim vegan tumblr portland shoreditch, pok pok gastropub occaecat ad la croix subway tile. Everyday carry disrupt lo-fi, cronut irony cloud bread hella +1. Williamsburg magna veniam tattooed, fingerstache readymade yuccie thundercats.
+
+Vape mixtape readymade four dollar toast fashion axe bespoke. Waistcoat craft beer velit laborum ullamco jean shorts man bun dolor banjo. Authentic letterpress jean shorts, tattooed cardigan distillery wayfarers laboris kale chips man braid offal williamsburg. Hexagon gochujang jianbing shoreditch chambray kinfolk glossier pariatur. Kinfolk iceland blue bottle subway tile meditation chillwave.
+
+Deep v snackwave aesthetic jean shorts dreamcatcher pinterest, labore fashion axe PBR&B swag shaman sunt jianbing four dollar toast. Polaroid sartorial salvia bespoke godard est vinyl meggings. Et hammock man braid, cloud bread cupidatat art party meh af leggings dolor viral vaporware subway tile chartreuse distillery. Nostrud voluptate exercitation chillwave pinterest raclette, stumptown enim synth tacos jean shorts. Bespoke taxidermy ullamco, glossier culpa affogato kickstarter blog retro est quis in.
+
+Bitters actually freegan disrupt culpa dolore. Echo park la croix elit, semiotics ut hella humblebrag vaporware voluptate beard qui cloud bread cillum swag lorem. Nostrud pour-over skateboard yr, franzen ullamco hashtag austin butcher. Lyft knausgaard typewriter, id vegan gentrify before they sold out lorem cronut occupy sint jianbing incididunt. Taxidermy hammock chia adaptogen jianbing kitsch cornhole. Cred aute gentrify, enim sustainable tumeric taiyaki street art enamel pin ea tofu palo santo. Shabby chic jean shorts eu swag umami.</p>
+  </div><!-- end main text -->
+</div><!-- end container-fluid -->
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->
     <!-- ============================= -->
@@ -129,7 +245,20 @@
     <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
-
+    <script type="text/javascript">
+      var $root = $('html, body');
+      $('.navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+        if (href != undefined && href != '#') {
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function () {
+            window.location.hash = href;
+          });
+        }
+        return false;
+      });
+    </script>
 
   </body>
 </html>

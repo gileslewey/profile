@@ -37,9 +37,7 @@ h3 {
 p {
     font-family: Mukta Mahee, palatino, cambria, serif;
 }
-.down {
-  margin-bottom: -50px;
-}
+
 .up {
   margin-bottom: 46%;
 }
@@ -85,7 +83,9 @@ h4 {
 }
 body {
   background-color: #fffeea;
-  }
+  position: relative;
+
+}
 h1,
 h2,
 h3 {
@@ -96,38 +96,43 @@ li {
   font-family: Mukta Mahee, palatino, cambria, serif;
 }
 /*pixels*/
+
 .nav a {
   display: inline-block;
-  float: right;
-  color: #FFF;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 20px 10px 20px;
   transition: color 600ms;
   -webkit-transition: color 600ms;
 }
-/*pixels*/
+
 .nav {
-  background-color: #ABA332;
-  position: fixed;
-  width: 100%;
   top: 0;
   z-index: 1;
-  background:rgba(171,163,50,0.6);
 }
+.projectName {
+    text-transform: uppercase;
+}
+.projectName a {
+    color: white;
+}
+
 .nav a:hover {
-  color:#73450C;
+  color: white;
   text-decoration: none;
 }
 .nav ul li {
   display: inline-block;
-  float: right;
   padding-right: 2%;
 }
-.nav ul li a {
-  display: inline-block;
-  float: right;
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+  color: #FF5733;
 }
+
 .panel {
   font-family: Mukta Mahee, palatino, cambria, serif;
   border-color: #73450C
@@ -139,6 +144,9 @@ li {
 .panel-title {
   font-family: PT Sans, helvetica, arial, sans-serif;
   color: #fff;
+}
+.contact-buffer {
+  margin-bottom: 5%;
 }
 /*about page*/
 
@@ -163,11 +171,6 @@ li {
 }
 /* bootstrap */
 
-@media (max-width: 880px) {
-  body {
-    background-color: red;
-  }
-}
 .mdMargin {
   margin: 3% 3%;
 }
@@ -177,3 +180,20 @@ li {
 .img-left {
   margin-right: +2%;
 }
+.projectName a {
+  color: #fff;
+}
+#contact {
+    background-image: url("../img/contact.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+/*Change the color of the text on top so it is readable and adjust the padding as needed.*/
+    padding:100px;
+    padding-top: 50px;
+    height: 100%;
+}
+.white {
+  color: white;
+}
+#FF5733
+#73450C
