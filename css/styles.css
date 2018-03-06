@@ -1,20 +1,18 @@
 .jumbotron {
   background-image: url("../img/trees2.jpg");
-  background-size: cover;}
-
+  background-size: cover;
+}
 .jumbotron p {
   color: #FFF;
   font-size: 2em;
   padding-top: 0%;
 }
-
 .jumbotron h1 {
   color: #fff;
   padding-bottom: 5%;
   padding-top: 70px;
   margin-right: 3%;
 }
-
 .row p {
   color: #73450C;
 }
@@ -26,9 +24,6 @@
   margin-left: -15px;
   margin-right: -15px;
 }
-h2 {
-  color: #73450C;
-}
 h1,
 h2,
 h3 {
@@ -37,11 +32,13 @@ h3 {
 p {
     font-family: Mukta Mahee, palatino, cambria, serif;
 }
-
-.up {
-  margin-bottom: 46%;
+body {
+  background-color: #fffeea;
+  position: relative;
 }
-/**** Contact Styles ****/
+p {
+  color: #fff;
+}
 h1 {
   text-align: center;
   padding-bottom: 5%;
@@ -49,20 +46,19 @@ h1 {
   margin-right:3%;
   padding-top: 7%;
 }
-h3 {
-  text-align: center;
-}
 h2 {
   color: #73450C;
   padding:0 10%;
 }
-p {
-  color: #fff;
+h3 {
+  text-align: center;
 }
 h4 {
   text-align: center;
-  /*padding: 5%;*/
   color: #fff;
+}
+.up {
+  margin-bottom: 46%;
 }
 .pcolor {
   clear: both;
@@ -71,32 +67,10 @@ h4 {
 .h3top {
   padding-top: 5%;
 }
-/*
-.clear {
-  background-color: initial;
-  margin-right: 5%;
-}
-*/
 .shadow {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
   margin: 0 0 5% 0;
 }
-body {
-  background-color: #fffeea;
-  position: relative;
-
-}
-h1,
-h2,
-h3 {
-  font-family: PT Sans, helvetica, arial, sans-serif;
-}
-p,
-li {
-  font-family: Mukta Mahee, palatino, cambria, serif;
-}
-/*pixels*/
-
 .nav a {
   display: inline-block;
   color: white;
@@ -106,7 +80,6 @@ li {
   transition: color 600ms;
   -webkit-transition: color 600ms;
 }
-
 .nav {
   top: 0;
   z-index: 1;
@@ -117,7 +90,6 @@ li {
 .projectName a {
     color: white;
 }
-
 .nav a:hover {
   color: white;
   text-decoration: none;
@@ -126,13 +98,11 @@ li {
   display: inline-block;
   padding-right: 2%;
 }
-
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
   color: #FF5733;
 }
-
 .panel {
   font-family: Mukta Mahee, palatino, cambria, serif;
   border-color: #73450C
@@ -148,8 +118,26 @@ li {
 .contact-buffer {
   margin-bottom: 5%;
 }
-/*about page*/
 
+.img-right {
+  margin-right: -2%;
+}
+.img-left {
+  margin-right: +2%;
+}
+.projectName a {
+  color: #fff;
+}
+.contactheader {
+  color: white;
+  text-shadow:-1.5px 0 #73450C, 0 1.5px #73450C, 1.5px 0 #73450C, 0 -1.5px #73450C;
+}
+.col-margin {
+  margin-bottom: 5%;
+}
+.container-left {
+  margin-left: 5%;
+}
 #about-intro {
   -webkit-margin-before: 0;
   font-size: 3em;
@@ -164,36 +152,36 @@ li {
 #skill-list {
   margin-left: 50px;
 }
-
-#about-skills {
-  background-color: #ABA332;
-  color: #FFF;
-}
-/* bootstrap */
-
-.mdMargin {
-  margin: 3% 3%;
-}
-.img-right {
-  margin-right: -2%;
-}
-.img-left {
-  margin-right: +2%;
-}
-.projectName a {
-  color: #fff;
-}
 #contact {
     background-image: url("../img/contact.jpg");
     background-attachment: fixed;
     background-size: cover;
-/*Change the color of the text on top so it is readable and adjust the padding as needed.*/
     padding:100px;
     padding-top: 50px;
     height: 100%;
 }
-.white {
-  color: white;
+#rec-color {
+  background-color: #fffeea;
+  color: #73450C;
 }
-#FF5733
-#73450C
+#skills {
+  background-color:#73450C;
+  color: #fff;
+}
+#carousel-header {
+  color: #FFF;
+  font-size: 3.5em;
+  text-shadow:-1.5px 0 #73450C, 0 1.5px #73450C, 1.5px 0 #73450C, 0 -1.5px #73450C;
+}
+#carousel-header-2 {
+  color: #fff;
+  font-size: 2em;
+  text-shadow:-1.5px 0 #73450C, 0 1.5px #73450C, 1.5px 0 #73450C, 0 -1.5px #73450C;
+}
+.card {
+    width:250px;
+    height:250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align:center;
+    margin:2%;
+}
