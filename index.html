@@ -12,13 +12,27 @@
   <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
-
+  <!-- You can use open graph tags to customize link previews.
+     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+   <meta property="og:url"           content="https://https://www.facebook.com/index.html" />
+   <meta property="og:type"          content="website" />
+   <meta property="og:title"         content="Your Website Title" />
+   <meta property="og:description"   content="Your description" />
+   <meta property="og:image"         content="https://www.https://www.facebook.com/index/image.jpg" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><!--facebook script-->
 
   <body data-spy="scroll" data-target=".navbar">
 
@@ -172,21 +186,21 @@ As an artist and a co-founder of a start-up company, I possess creative insight 
 
 <div class="container-fluid" id="contact">
   <h1><strong class="contactheader">Contact Me</strong></h1>
-  <div class="col-md-4 col-xs-6 img-right">
+  <div class="col-md-6 col-xs-6 img-right">
     <img src="img/BWprofile.jpg" class="shadow img-right" alt="black and white profile pic">
   </div><!--end column-->
-  <div class="col-md-4 col-xs-6 img-left" id="rec-color">
+  <div class="col-md-6 col-xs-6 img-left" id="rec-color">
     <!--<img src="img/Min.jpg" class="img-responsive"  alt="skyline">-->
     <h2><strong> email:<br>
       gileslewey@gmail.com</strong></h2>
       <h2>Location:<br>
       St. Paul, MN 55104<br>
       </h2>
-  <div class="col-md-4 col-xs-6"></div>
+
   </div><!--end column-->
 </div><!-- end container-fluid-->
 
-<div class="container-fluid container-left">
+<div class="container-fluid">
   <div class="row navbelow">
     <div class="col-xs-12" id="work"><h1>Work</h1></div>
     <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #1</p></div>
@@ -208,7 +222,7 @@ As an artist and a co-founder of a start-up company, I possess creative insight 
     <img src="img/profile.jpg" alt="best coder ever">
   </div><!-- end of image -->
   <div class="col-md-4" id="about-intro">
-    <p class="pcolor">Seeing the forest <br><i>and</i> the trees.</p>
+    <h1 class="pcolor">Seeing<br>the forest<br><strong>and</strong><br>the trees</h1>
   </div><!-- end intro column -->
 
   <div class="col-md-4" id="skills">
@@ -231,7 +245,24 @@ Deep v snackwave aesthetic jean shorts dreamcatcher pinterest, labore fashion ax
 
 Bitters actually freegan disrupt culpa dolore. Echo park la croix elit, semiotics ut hella humblebrag vaporware voluptate beard qui cloud bread cillum swag lorem. Nostrud pour-over skateboard yr, franzen ullamco hashtag austin butcher. Lyft knausgaard typewriter, id vegan gentrify before they sold out lorem cronut occupy sint jianbing incididunt. Taxidermy hammock chia adaptogen jianbing kitsch cornhole. Cred aute gentrify, enim sustainable tumeric taiyaki street art enamel pin ea tofu palo santo. Shabby chic jean shorts eu swag umami.</p>
   </div><!-- end main text -->
+
+<footer>
+   <p class="reveal"> &copy; <em>Giles Lewey</em>, 2018</p>
+ <a href="https://twitter.com/giles_lewey?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @giles_lewey</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ <!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="500" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+ --><iframe class="fb-like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=500&layout=button&action=like&size=small&show_faces=false&share=false&height=65&appId" width="auto" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+ </footer>
+<div class="well">
+  <h2>Learn Some Chess</h2>
+  <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/1luv3WpSmwM"></iframe>
+</div><!--endEmbed-->
+</div><!--end well-->
+</div><!--end youtube-bootstrap-->
 </div><!-- end container-fluid -->
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -249,6 +280,10 @@ Bitters actually freegan disrupt culpa dolore. Echo park la croix elit, semiotic
         }
         return false;
       });
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test
+        (d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
+          js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
+          (document, 'script', 'twitter-wjs');</script>
     </script>
 
   </body>

@@ -119,11 +119,9 @@ h4 {
   margin-bottom: 5%;
 }
 
-.img-right {
-  margin-right: -2%;
-}
+
 .img-left {
-  margin-right: +2%;
+  margin-right: -7%;
 }
 .projectName a {
   color: #fff;
@@ -135,8 +133,27 @@ h4 {
 .col-margin {
   margin-bottom: 5%;
 }
-.container-left {
-  margin-left: 5%;
+.twitter-follow-button {
+}
+.reveal {
+color: #000;
+padding-right: 4%;
+}
+
+footer {
+  display: flex;
+  background-color:
+  <!--try and fix height and make color-->
+  overflow: auto;
+  padding: 1% 1%;
+  height: 120px;
+  /*flex-wrap: wrap;*/
+}
+#twitterP {
+  padding: 0% 2%;
+}
+.fb-like {
+padding: 0% 2%;
 }
 #about-intro {
   -webkit-margin-before: 0;
@@ -184,4 +201,10 @@ h4 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align:center;
     margin:2%;
+}
+.container-fluid {
+  width:90%;
+}
+.container-left {
+  margin-left: 5%;
 }
