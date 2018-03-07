@@ -57,6 +57,9 @@ h4 {
   text-align: center;
   color: #fff;
 }
+button {
+  margin-top: 2%;
+}
 .up {
   margin-bottom: 46%;
 }
@@ -118,10 +121,8 @@ h4 {
 .contact-buffer {
   margin-bottom: 5%;
 }
-
-
 .img-left {
-  margin-right: -7%;
+  margin-right:
 }
 .projectName a {
   color: #fff;
@@ -139,7 +140,9 @@ h4 {
 color: #000;
 padding-right: 4%;
 }
-
+.form-control {
+  width: 80%;
+}
 footer {
   display: flex;
   background-color:
@@ -152,6 +155,7 @@ footer {
 #twitterP {
   padding: 0% 2%;
 }
+.container-fluid
 .fb-like {
 padding: 0% 2%;
 }
