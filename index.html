@@ -117,18 +117,25 @@
       <div class="row">
         <div class="col-md-4">
           <h2>Portfolio Concept:</h2>
-          <p>Programming work designed to showcase fluency in the latest front- and back-end technologies.
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>Programming <a href="#"
+          title="Or fun." id="item2">work</a> designed to showcase fluency in the latest front- and back-end technologies.
+          <p><a class="btn btn-default" href="#work" role="button"
+          data-toggle="tooltip" data-placement="right" title="Latest Work">View details &raquo;</a></p>
         </div><!-- /col -->
         <div class="col-md-4">
           <h2>Project Goals:</h2>
-          <p>Time commitment will be 40 hours a week. A personal deadline is June 10th (birthday).
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>Time commitment will be <a href="#"
+          title="Or more." id="item1">40 hours</a> a week. A personal deadline is June 10th (birthday).
+          <p><a class="btn btn-default" href="#work" role="button"
+          data-toggle="tooltip" data-placement="right" title="See How I'm doing...">View details &raquo;</a></p>
+
         </div><!-- /col -->
         <div class="col-md-4">
           <h2>Course Goals:</h2>
-          <p>I'm changing careers. Hopefully fifteen years as lead proofreader at a financial printing company will give some value-added. I worked with a start-up for three years and have some artistic and design background. This will either be the start of a new career or a pragmatic stepping-stone.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>I'm changing careers. Hopefully fifteen years as lead proofreader at a financial printing company will give some value-added. I worked with a <a href="#"
+          title="TrustWorks" id="item3">start-up</a> for three years and have some artistic and design background. This will either be the start of a new career or a pragmatic stepping-stone.</p>
+          <p><a class="btn btn-default" href="#faq" role="button"
+          data-toggle="tooltip" data-placement="right" title="See my resume">View details &raquo;</a></p>
         </div><!-- /col -->
       </div><!-- /row -->
     </div><!--endcontainer-->
@@ -175,7 +182,7 @@
             <div class="panel-body">
 A full-stack is someone who is familiar with all layers in
 computer software development. These developers aren’t experts at everything; they simply have a functional knowledge and
-ability to take a concept and turn it into a finished product. Such gurus make building software much easier as they
+ability to take a concept and turn it into a finished product. Such gurus</a> make building software much easier as they
 understand how everything works from top to bottom and can anticipate problems accordingly.            </div><!--end panel-->
           </div><!--end id-->
         </div><!--end panel-default-->
@@ -215,7 +222,7 @@ As an artist and a co-founder of a start-up company, I possess creative insight 
   <div class="col-lg-4 col-md-4 img-right">
     <!--<img src="img/BWprofile.jpg" class="shadow img-right" alt="black and white profile pic">-->
     <div id="rec-color">
-    <h3><strong> email:<br>
+    <h3><strong> email:<br><!--make these heads scalable-->
       gileslewey@gmail.com</strong></h3>
       <h3>location:<br>
       St. Paul, MN 55104<br>
@@ -304,6 +311,26 @@ Bitters actually freegan disrupt culpa dolore. Echo park la croix elit, semiotic
     <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
+    <script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+    <script>
+    $(function(){
+      $("#[item1]").tooltip();
+    });
+    </script>
+    <script>
+    $(function(){
+      $("#[item2]").tooltip();
+    });
+    </script>
+    <script>
+    $(function(){
+      $("#[item3]").tooltip();
+    });
+    </script>
     <script type="text/javascript">
       var $root = $('html, body');
       $('.navbar-nav a').click(function() {
