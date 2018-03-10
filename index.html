@@ -9,30 +9,35 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/myscripts.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
-  <!-- You can use open graph tags to customize link previews.
-     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+   <!--Facebook-->
    <meta property="og:url"           content="https://https://www.facebook.com/index.html" />
    <meta property="og:type"          content="website" />
    <meta property="og:title"         content="Your Website Title" />
    <meta property="og:description"   content="Your description" />
    <meta property="og:image"         content="https://www.https://www.facebook.com/index/image.jpg" />
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--IE9-->
+  [if lt IE 9]
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  [endif]
   </head>
-  <div id="fb-root"></div>
+
+<!--Facebook JS-->
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script><!--facebook script-->
+  }(document, 'script', 'facebook-jssdk'));</script><!--facebook script-->
+
+<!--NAV Section-->
 
   <body data-spy="scroll" data-target=".navbar">
 
@@ -72,6 +77,8 @@
       </div><!--end container-->
     </nav><!--end nav-->
 
+<!--Carousel Section-->
+
     <div class="container-fluid anchor" id="index"></div>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -87,10 +94,10 @@
           <img src="img/carouseltrees.jpg" alt="Hero Image Two">
         </div><!--end item active-->
         <div class="carousel-caption">
-          <div class="up">
+          <div class="carousel-text">
             <h3 id="carousel-header">Seeing the forest <i>and</i> the trees.</h3>
             <p id="carousel-header-2">I bring focused talents and broad experience to bear on workplace challenges.</p>
-          </div><!--end up-->
+          </div><!--end carousel-text-->
         </div><!--caption-->
 
         <div class="item">
@@ -112,6 +119,7 @@
       </a>
     </div>
 
+<!--Hero Text-->
 
     <div class="container-fluid">
       <div class="row">
@@ -128,7 +136,6 @@
           title="Or more." id="item1">40 hours</a> a week. A personal deadline is June 10th (birthday).
           <p><a class="btn btn-default" href="#work" role="button"
           data-toggle="tooltip" data-placement="right" title="See How I'm doing...">View details &raquo;</a></p>
-
         </div><!-- /col -->
         <div class="col-md-4">
           <h2>Course Goals:</h2>
@@ -139,34 +146,37 @@
         </div><!-- /col -->
       </div><!-- /row -->
     </div><!--endcontainer-->
+
+<!--FAQ Section-->
+
     <div class="container">
       <div class="header">
         <h1 id="faq"><strong>Frequently Asked Questions</strong></h1>
       </div><!--endheader-->
       <div class="row">
-       <h2 class="learn-more">Learn More</h2>
+        <h2 class="learn-more">Learn More</h2>
           <!-- Large modal -->
-       <div class="modal-button"><!--FIX-ALIGN-->
-       <button type="button" class="btn btn-primary" data-toggle="modal"
-       data-target=".bd-example-modal-lg">Ciriculum Vitae</button>
-       </div><!--end modal modal-button-->
-       <!--map-out functions of modal-->
-       <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-       aria-labelledby="myLargeModalLabel" aria-hidden="true">
-         <div class="modal-dialog modal-lg" role="document">
-           <div class="modal-content">
-             <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal"
-               aria-label="Close"><span aria-hidden="true">×</span></button>
-               <h4 class="modal-title" id="myModalLabel">Cirriculum Vitae</h4>
-             </div><!--end modal-header-->
-             <div class="modal-body">
-             <embed id="modalembed" src="GLresume.pdf" internalinstanceid="458">
-             </div><!--end modal-body-->
-           </div><!--end modal-content-->
-         </div><!--end model-dialog-->
-       </div><!--end modal fade-->
-      <!--modal fade-->
+        <div class="modal-button"><!--FIX-ALIGN-->
+        <button type="button" class="btn btn-primary" data-toggle="modal"
+        data-target=".bd-example-modal-lg">Ciriculum Vitae</button>
+        </div><!--end modal modal-button-->
+        <!--map-out functions of modal-->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">Cirriculum Vitae</h4>
+              </div><!--end modal-header-->
+              <div class="modal-body">
+                <embed id="modalembed" src="GLresume.pdf" internalinstanceid="458">
+              </div><!--end modal-body-->
+            </div><!--end modal-content-->
+          </div><!--end model-dialog-->
+        </div><!--end modal fade-->
+        <!--modal fade-->
       </div><!--end row-->
     <div class="container-fluid">
       <div class="panel-group" id="accordion">
@@ -180,10 +190,11 @@
           </div><!--end panel-head-->
           <div id="collapseOne" class="panel-collapse collapse in">
             <div class="panel-body">
-A full-stack is someone who is familiar with all layers in
-computer software development. These developers aren’t experts at everything; they simply have a functional knowledge and
-ability to take a concept and turn it into a finished product. Such gurus</a> make building software much easier as they
-understand how everything works from top to bottom and can anticipate problems accordingly.            </div><!--end panel-->
+            A full-stack is someone who is familiar with all layers in
+            computer software development. These developers aren’t experts at everything; they simply have a functional knowledge and
+            ability to take a concept and turn it into a finished product. Such gurus</a> make building software much easier as they
+            understand how everything works from top to bottom and can anticipate problems accordingly.
+            </div><!--end panel-->
           </div><!--end id-->
         </div><!--end panel-default-->
         <div class="panel panel-default">
@@ -196,7 +207,7 @@ understand how everything works from top to bottom and can anticipate problems a
           </div><!--end panel-head-->
         <div id="collapseTwo" class="panel-collapse collapse">
           <div class="panel-body">You get to use your creativity and mind. There's no career limit for talented and hard working programmers. You can develop your own software product.
-Computer Programming can prepare you for careers in other related technology.
+          Computer Programming can prepare you for careers in other related technology.
           </div><!--end panel-body-->
         </div><!--end id-->
       </div><!--end panel-->
@@ -207,148 +218,108 @@ Computer Programming can prepare you for careers in other related technology.
             <strong>Do you have other skills?</strong>
             </a>
           </h4>
-        </div><!--end panel-head-->
+        </div><!--end panel heading-->
       <div id="collapseThree" class="panel-collapse collapse">
         <div class="panel-body">
-As a supervisor within the quality assurance department of a major financial services corporation, I maintain a devotion to detail under stressful, sometimes exhausting circumstances.
-As an artist and a co-founder of a start-up company, I possess creative insight and a drive for personal achievement.
-</div><!--end panel-body-->
+        As a supervisor within the quality assurance department of a major financial services corporation, I maintain a devotion to detail under stressful, sometimes exhausting circumstances.
+        As an artist and a co-founder of a start-up company, I possess creative insight and a drive for personal achievement.
+        </div><!--end panel-body-->
       </div><!--end id-->
-    </div><!--end panel-->
-  </div><!--end panel group-->
-</div><!-- end fluid-container-->
-<div class="container-fluid" id="contact">
-  <h1><strong class="contactheader">Contact Me</strong></h1>
-  <div class="col-lg-4 col-md-4 img-right">
+    </div><!--end panel group-->
+  </div><!-- end container-fluid-->
+
+<!--Contact Section-->
+
+  <div class="container-fluid" id="contact">
+    <h1><strong class="contactheader">Contact Me</strong></h1>
+    <div class="col-lg-4 col-md-4" id="contact-background">
     <!--<img src="img/BWprofile.jpg" class="shadow img-right" alt="black and white profile pic">-->
-    <div id="rec-color">
-    <h3><strong> email:<br><!--make these heads scalable-->
+      <h3 id="contact-text"><strong> email:<br><!--make these heads scalable-->
       gileslewey@gmail.com</strong></h3>
       <h3>location:<br>
       St. Paul, MN 55104<br>
       <h3>phone: <br>646.286.3273
-    </h3>
-    </div><!--end rec-color-->
-  </div><!--end column-->
-  <div class="col-lg-8 col-md-8">
-    <form>
-      <div class="form-group">
-        <input type="text" placeholder="Enter your name*" required="required" title="Enter first and last name" class="message-box form-control" id="name">
-      </div><!--end form-group div-->
-      <div class="form-group">
-        <input type="email" placeholder="Your email address*" required="required" title="Enter your email" class="message-box form-control" id="email">
-      </div><!--end form-group div-->
-      <textarea placeholder="Your message here" class="message-box form-control" title="Send a message!" style="resize:none" cols="40" rows="5"></textarea>
-    </form>
-      <button type="submit" class="btn btn-primary">Submit</button>
-  </div><!--end column-->
-</div><!-- end container-fluid-->
+      </h3>
+    </div><!--end column-->
+    <div class="col-lg-8 col-md-8">
+      <form>
+        <div class="form-group">
+      <input type="text" placeholder="Enter your name*" required="required" title="Enter first and last name" class="message-box form-control" id="name">
+        </div><!--end form-group div-->
+        <div class="form-group">
+          <input type="email" placeholder="Your email address*" required="required" title="Enter your email" class="message-box form-control" id="email">
+        </div><!--end form-group div-->
+        <textarea placeholder="Your message here" class="message-box form-control" title="Send a message!" style="resize:none" cols="40" rows="5"></textarea>
+      </form>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div><!--end column-->
+  </div><!-- end container-fluid-->
 
-<div class="container-fluid">
-  <div class="row navbelow">
-    <div class="col-xs-12" id="work"><h1>Work</h1></div>
-    <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #1</p></div>
-    <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #2</p></div>
-    <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #3</p></div>
-    <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #4</p></div>
-    <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #5</p></div>
-    <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #6</p></div>
-    <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #7</p></div>
-    <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #8</p></div>
-  </div><!--end work-->
-</div><!--end container fluid-->
+<!--Work Section-->
 
-<div class="container-fluid">
+  <div class="container-fluid">
+    <div class="row navbelow">
+      <div class="col-xs-12" id="work"><h1>Work</h1></div>
+      <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #1</p></div>
+      <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #2</p></div>
+      <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #3</p></div>
+      <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #4</p></div>
+      <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #5</p></div>
+      <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #6</p></div>
+      <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #7</p></div>
+      <div class="col-md-3 col-xs-6 col-margin"><img src="img/rook.jpg" class="img-responsive shadow"><p>Work Project #8</p></div>
+    </div><!--end work-->
+  </div><!--end container fluid-->
+
+<!--About Section-->
+
+  <div class="container-fluid">
     <h1><strong>About Me</strong></h1>
-  </div><!-- end of row -->
-  <div class="col-md-4">
-    <img src="img/profile.jpg" alt="best coder ever">
-  </div><!-- end of image -->
-  <div class="col-md-4" id="about-intro">
-    <h1 class="pcolor">Seeing<br>the forest<br><strong>and</strong><br>the trees</h1>
-  </div><!-- end intro column -->
+    <div class="col-md-4">
+      <img src="img/profile.jpg" alt="best coder ever">
+    </div><!--end column-->
+    <div class="col-md-4" id="about-intro">
+      <h1 class="pcolor">Seeing<br>the forest<br><strong>and</strong><br>the trees</h1>
+    </div><!-- end column -->
+    <div class="col-md-4" id="skills">
+      <h3>Skills</h3>
+      <ul id="skill-list">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>Wireframing</li>
+      </ul>
+    </div><!-- end column-->
+    <div class="main-text">
+      <h3 class="pcolor h3top"><strong>More About Me</strong></h3>
+      <p class="pcolor">Lorem ipsum dolor amet williamsburg pickled minim bicycle rights. Flannel messenger bag aute single-origin coffee pariatur laborum eiusmod officia hell of deep v. Lumbersexual flexitarian ad shaman tofu. Irure intelligentsia keytar, stumptown chicharrones nulla ethical adipisicing bitters. Enamel pin gochujang cillum chia.
 
-  <div class="col-md-4" id="skills">
-    <h3>Skills</h3>
-    <ul id="skill-list">
-      <li>HTML/CSS</li>
-      <li>JavaScript</li>
-      <li>Wireframing</li>
-    </ul>
-  </div><!-- end skills column-->
-  <div class="main-text">
-    <h3 class="pcolor h3top"><strong>More About Me</strong></h3>
-    <p class="pcolor">Lorem ipsum dolor amet williamsburg pickled minim bicycle rights. Flannel messenger bag aute single-origin coffee pariatur laborum eiusmod officia hell of deep v. Lumbersexual flexitarian ad shaman tofu. Irure intelligentsia keytar, stumptown chicharrones nulla ethical adipisicing bitters. Enamel pin gochujang cillum chia.
+      Cillum disrupt prism, tempor fashion axe chicharrones ipsum umami kale chips +1 nisi esse copper mug biodiesel. Migas fam tempor occaecat edison bulb proident hell of af. Raw denim vegan tumblr portland shoreditch, pok pok gastropub occaecat ad la croix subway tile. Everyday carry disrupt lo-fi, cronut irony cloud bread hella +1. Williamsburg magna veniam tattooed, fingerstache readymade yuccie thundercats.
 
-Cillum disrupt prism, tempor fashion axe chicharrones ipsum umami kale chips +1 nisi esse copper mug biodiesel. Migas fam tempor occaecat edison bulb proident hell of af. Raw denim vegan tumblr portland shoreditch, pok pok gastropub occaecat ad la croix subway tile. Everyday carry disrupt lo-fi, cronut irony cloud bread hella +1. Williamsburg magna veniam tattooed, fingerstache readymade yuccie thundercats.
+      Deep v snackwave aesthetic jean shorts dreamcatcher pinterest, labore fashion axe PBR&B swag shaman sunt jianbing four dollar toast. Polaroid sartorial salvia bespoke godard est vinyl meggings. Et hammock man braid, cloud bread cupidatat art party meh af leggings dolor viral vaporware subway tile chartreuse distillery. Nostrud voluptate exercitation chillwave pinterest raclette, stumptown enim synth tacos jean shorts. Bespoke taxidermy ullamco, glossier culpa affogato kickstarter blog retro est quis in.
 
-Vape mixtape readymade four dollar toast fashion axe bespoke. Waistcoat craft beer velit laborum ullamco jean shorts man bun dolor banjo. Authentic letterpress jean shorts, tattooed cardigan distillery wayfarers laboris kale chips man braid offal williamsburg. Hexagon gochujang jianbing shoreditch chambray kinfolk glossier pariatur. Kinfolk iceland blue bottle subway tile meditation chillwave.
-
-Deep v snackwave aesthetic jean shorts dreamcatcher pinterest, labore fashion axe PBR&B swag shaman sunt jianbing four dollar toast. Polaroid sartorial salvia bespoke godard est vinyl meggings. Et hammock man braid, cloud bread cupidatat art party meh af leggings dolor viral vaporware subway tile chartreuse distillery. Nostrud voluptate exercitation chillwave pinterest raclette, stumptown enim synth tacos jean shorts. Bespoke taxidermy ullamco, glossier culpa affogato kickstarter blog retro est quis in.
-
-Bitters actually freegan disrupt culpa dolore. Echo park la croix elit, semiotics ut hella humblebrag vaporware voluptate beard qui cloud bread cillum swag lorem. Nostrud pour-over skateboard yr, franzen ullamco hashtag austin butcher. Lyft knausgaard typewriter, id vegan gentrify before they sold out lorem cronut occupy sint jianbing incididunt. Taxidermy hammock chia adaptogen jianbing kitsch cornhole. Cred aute gentrify, enim sustainable tumeric taiyaki street art enamel pin ea tofu palo santo. Shabby chic jean shorts eu swag umami.</p>
-  </div><!-- end main text -->
-</div><!--end container-fluid-->
-<div class="container-fluid">
-<footer>
-   <p class="reveal"> &copy; <em>Giles Lewey</em>, 2018</p>
- <a href="https://twitter.com/giles_lewey?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @giles_lewey</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
- <!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="500" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
- --><iframe class="fb-like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=500&layout=button&action=like&size=small&show_faces=false&share=false&height=65&appId" width="auto" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
- </footer>
-<div class="well">
-  <h2>Learn Some Chess</h2>
-  <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/1luv3WpSmwM"></iframe>
-</div><!--endEmbed-->
-</div><!--end well-->
-</div><!--end youtube-bootstrap-->
-</div><!-- end container-fluid -->
+      Bitters actually freegan disrupt culpa dolore. Echo park la croix elit, semiotics ut hella humblebrag vaporware voluptate beard qui cloud bread cillum swag lorem. Nostrud pour-over skateboard yr, franzen ullamco hashtag austin butcher. Lyft knausgaard typewriter, id vegan gentrify before they sold out lorem cronut occupy sint jianbing incididunt. Taxidermy hammock chia adaptogen jianbing kitsch cornhole. Cred aute gentrify, enim sustainable tumeric taiyaki street art enamel pin ea tofu palo santo. Shabby chic jean shorts eu swag umami.</p>
+    </div><!-- end main text -->
+  </div><!--end container-fluid-->
+  <div class="container-fluid">
+    <footer>
+      <p id="copyright"> &copy; <em>Giles Lewey</em>, 2018</p>
+      <a href="https://twitter.com/giles_lewey?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @giles_lewey</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <iframe class="fb-like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=500&layout=button&action=like&size=small&show_faces=false&share=false&height=65&appId" width="auto" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    </footer>
+    <div class="well">
+      <h2>Learn Some Chess</h2>
+      <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/1luv3WpSmwM"></iframe>
+      <div><!--endEmbed-->
+    </div><!--end well-->
+  </div><!-- end container-fluid -->
 
 
+<!--JS Code-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap core JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap core JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Can place script tags with JavaScript files here -->
-    <script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-</script>
-    <script>
-    $(function(){
-      $("#[item1]").tooltip();
-    });
-    </script>
-    <script>
-    $(function(){
-      $("#[item2]").tooltip();
-    });
-    </script>
-    <script>
-    $(function(){
-      $("#[item3]").tooltip();
-    });
-    </script>
-    <script type="text/javascript">
-      var $root = $('html, body');
-      $('.navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-        if (href != undefined && href != '#') {
-          $root.animate({
-            scrollTop: $(href).offset().top
-          }, 500, function () {
-            window.location.hash = href;
-          });
-        }
-        return false;
-      });
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test
-        (d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
-          js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-          (document, 'script', 'twitter-wjs');</script>
-    </script>
 
   </body>
 </html>
