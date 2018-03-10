@@ -51,13 +51,6 @@ button {
 .carousel-text {
   margin-bottom: 46%;
 }
-.pcolor {
-  clear: both;
-  color: #73450C;
-}
-.h3top {
-  padding-top: 5%;
-}
 
 /*Intro-Section*/
 
@@ -217,9 +210,6 @@ footer {
   text-align: center;
   text-transform: uppercase;
 }
-#skill-list {
-  margin-left: 50px;
-}
 #contact {
     background-image: url("../img/contact.jpg");
     background-attachment: fixed;
@@ -231,10 +221,6 @@ footer {
 #contact-background {
   background-color: #fffeea;
   color: #73450C;
-}
-#skills {
-  background-color:#73450C;
-  color: #fff;
 }
 #carousel-header {
   color: #FFF;
@@ -264,3 +250,17 @@ footer {
 
 
 /* About Me */
+.pcolor {
+  clear: both;
+  color: #73450C;
+}
+#skill-list {
+  margin-left: 50px;
+}
+#skills {
+  background-color:#73450C;
+  color: #fff;
+}
+.h3top {
+  padding-top: 5%;
+}
