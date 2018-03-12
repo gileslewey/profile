@@ -1,4 +1,6 @@
 
+<!-- Can place script tags with JavaScript files here -->
+//facebook
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -7,8 +9,19 @@
   fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script><!--facebook script-->
 
-<!-- Can place script tags with JavaScript files here -->
+//twitter
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test
+    (d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
+      js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
+      (document, 'script', 'twitter-wjs');</script>
+</script>
+
+//DOM ready
+$(document).ready(function(){
+
+
 <script>
+//tooltips
 $(function () {
 $('[data-toggle="tooltip"]').tooltip();
 });
@@ -28,6 +41,7 @@ $(function(){
   $("#[item3]").tooltip();
 });
 </script>
+//smooth scrolling
 <script type="text/javascript">
   var $root = $('html, body');
   $('.navbar-nav a').click(function() {
@@ -41,8 +55,5 @@ $(function(){
     }
     return false;
   });
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test
-    (d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
-      js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-      (document, 'script', 'twitter-wjs');</script>
-</script>
+// end DOM
+});
