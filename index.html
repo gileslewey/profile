@@ -20,11 +20,10 @@
    <meta property="og:image"         content="https://www.https://www.facebook.com/index/image.jpg" />
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--IE9-->
-  [if lt IE 9]
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  [endif]
-  </head>
+<!--[if lt IE 9]
+
+  [endif]-->
+</head>
 
 <!--Facebook JS-->
 <div id="fb-root"></div>
@@ -51,7 +50,6 @@
         <a href="FAQ.html">FAQ</a>-->
       <!--</div>
           </div>-->
-
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header"></div>
@@ -243,14 +241,16 @@
     <div class="col-lg-8 col-md-8">
       <form>
         <div class="form-group">
-      <input type="text" placeholder="Enter your name*" required="required" title="Enter first and last name" class="message-box form-control" id="name">
+      <input type="text" placeholder="Enter your name*" required="required" title="Enter first and last name" class="form-control" id="name">
         </div><!--end form-group div-->
         <div class="form-group">
-          <input type="email" placeholder="Your email address*" required="required" title="Enter your email" class="message-box form-control" id="email">
+          <input type="email" placeholder="Your email address*" required="required" title="Enter your email" class="form-control" id="email">
         </div><!--end form-group div-->
         <textarea placeholder="Your message here" class="message-box form-control" title="Send a message!" style="resize:none" cols="40" rows="5"></textarea>
+      <p id="visible-comment" class="message-entry"></p>
       </form>
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <button type="submit" class="btn btn-primary" id="button">Submit</button>
     </div><!--end column-->
   </div><!-- end container-fluid-->
 
@@ -313,14 +313,16 @@
     </div><!--end well-->
   </div><!-- end container-fluid -->
 
-
-<!--JS Code-->
-<script src="js/jquery.stellar.min.js"></script>
-  <script src=“js/scripts.js”></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Bootstrap core JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
 
 
-  </body>
+  <!-- Bootstrap core JS -->
+
+
+
 </html>

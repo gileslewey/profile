@@ -158,7 +158,11 @@ margin-right: 4%;
 #contact-text {
   font-size: 1.5em;
 }
-
+.message-entry {
+  color: #73450C;
+  background-color: white;
+  text-transform: uppercase;
+}
 .learn-more {
   text-align: left;
   float: left;
@@ -211,16 +215,16 @@ footer {
   text-transform: uppercase;
 }
 #contact {
-    background-image: url("../img/contact.jpg");
+    background-image: url("../img/contact.jpg")
     background-attachment: fixed;
     background-size: cover;
     padding:100px;
     padding-top: 50px;
     height: 100%;
 }
-#contact-background {
+/*#contact-background {
   background-color: #fffeea;
-  color: #73450C;
+  color: #73450C;-->*/
 }
 #carousel-header {
   color: #FFF;
