@@ -26,6 +26,10 @@ $(document).ready(function(){
     $(".message-box").hide();
     return false;
   });
+
+  $(".message-box").on("keyup", function() {
+
+  });
 //tooltips
 //$(function () {
 //$('[data-toggle="tooltip"]').tooltip();
