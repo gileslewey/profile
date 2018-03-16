@@ -19,18 +19,59 @@ js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefo
 //DOM ready
 $(document).ready(function(){
   //alert("Document is ready!");
+  $(".message-box").on("keyup", function(){
+    //console.log("keyup works");
 
+
+  var charCount = $(".message-box").val().length;
+  //var messageValid = $(".message-box").val()
+  //count length value of message-box
+    console.log(charCount);
+    //gives var charCount in console
+    $("#char-count").html(charCount);
+    //$("#message-valid").html(messageValid);
+    //turns char-count into an html ID js can read
+
+  if(charCount > 50) {
+    //does what follows if need to be in parens?
+
+    $("#char-count").css("color", "red");
+  }
+  else {
+    //else not a pair, outside {}
+    $("#char-count").css("color", "black");
+  };
+});
+
+
+//not breaking it now anyway
   $("#button").on("click", function() {
-    var comment=$(".message-box").val();
-    $("#visible-comment").html(comment);
-    $(".message-box").hide();
+
+    if ($(".message-box").val() === "") {
+
+       $("#text-area").css("border", "2px solid red");
+       console.log("works");
+    }
+    else {
+      var comment=$(".message-box").val();
+      $("#visible-comment").html(comment);
+      $(".message-box").hide();
+      $("#message-box").css("border-color", "black");
+    };
+});
+
+
+
+
     return false;
   });
 
-  $(".message-box").on("keyup", function() {
+//If the value (.val()) of the
+//.message-box is equal to an empty string ""
 
-  });
-//tooltips
+
+
+//tips
 //$(function () {
 //$('[data-toggle="tooltip"]').tooltip();
 //});
@@ -63,4 +104,3 @@ $(document).ready(function(){
     return false;
   });
 // end DOM
-});
