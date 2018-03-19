@@ -41,6 +41,7 @@ $(document).ready(function(){
     //else not a pair, outside {}
     $("#char-count").css("color", "black");
   };
+
 });
 
 
@@ -48,9 +49,8 @@ $(document).ready(function(){
   $("#button").on("click", function() {
 
     if ($(".message-box").val() === "") {
-
        $("#text-area").css("border", "2px solid red");
-       console.log("works");
+       //console.log(works);
     }
     else {
       var comment=$(".message-box").val();
@@ -59,17 +59,31 @@ $(document).ready(function(){
       $("#message-box").css("border-color", "black");
     };
 });
-
-
-
-
+//works section
+for (var i = 0; i < works.length; ++i ) {
+  $("#work").append("\
+    <div class='col-md-3 col-xs-6 col-margin'>\
+     <img class='img-responsive' src='" + works[i] + "'>\
+    </div><!-- / col -->\
+  ");
+    var images = $("#work img");
+    if (2%i===0) {
+    $(images[i]).css("border", "2px solid salmon");
+  }
+    else {
+    $(images[i]).css("border", "2px solid DodgerBlue");
+  };
+};
     return false;
-  });
+});
+
+
+
 
 //If the value (.val()) of the
 //.message-box is equal to an empty string ""
 
-
+//  <p>Work Project #1</p>\
 
 //tips
 //$(function () {
