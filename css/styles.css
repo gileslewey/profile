@@ -251,7 +251,28 @@ footer {
 
 /* Work Section */
 
+.work-img {
+  display:block;
+  margin:auto;
+  max-width:200px;
+  position:relative;
+}
 
+.info {
+  position:absolute;
+  top:15%;
+  left:22%;
+  font-family: PT Sans, helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700%
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  display: none;
+}
+
+.proj-title {
+
+}
 
 /* About Me */
 .pcolor {

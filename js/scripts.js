@@ -18,39 +18,26 @@ js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefo
 
 //DOM ready
 $(document).ready(function(){
-  //alert("Document is ready!");
   $(".message-box").on("keyup", function(){
-    //console.log("keyup works");
 
-
+//*Contact Section*
   var charCount = $(".message-box").val().length;
-  //var messageValid = $(".message-box").val()
-  //count length value of message-box
     console.log(charCount);
-    //gives var charCount in console
     $("#char-count").html(charCount);
-    //$("#message-valid").html(messageValid);
     //turns char-count into an html ID js can read
 
   if(charCount > 50) {
-    //does what follows if need to be in parens?
-
     $("#char-count").css("color", "red");
   }
   else {
-    //else not a pair, outside {}
     $("#char-count").css("color", "black");
   };
-
 });
 
 
-//not breaking it now anyway
   $("#button").on("click", function() {
-
     if ($(".message-box").val() === "") {
        $("#text-area").css("border", "2px solid red");
-       //console.log(works);
     }
     else {
       var comment=$(".message-box").val();
@@ -58,13 +45,20 @@ $(document).ready(function(){
       $(".message-box").hide();
       $("#message-box").css("border-color", "black");
     };
+  //BETTER WAY  var isMessageBoxEmpty = $(".message-box").val()
+  //   === ""; if (isMessageBoxEmpty) { $("#text-area").css("border", "2px solid red");
+  //   console.log("works"); }
 });
-//works section
+
+//*Work Section*
 for (var i = 0; i < works.length; ++i ) {
   $("#work").append("\
-    <div class='col-md-3 col-xs-6 col-margin'>\
-     <img class='img-responsive' src='" + works[i] + "'>\
-    </div><!-- / col -->\
+    <div class='col-sm-3 col-md-3'>\
+      <a href='" + works[i].pic + "' class='work-img'>\
+        <img class='img-responsive' src='" + works[i].pic + "'>\
+        <span class='info'><p class='proj-title'>" + works[i].title + "</p></span>\
+        </a>\
+    </div>\
   ");
     var images = $("#work img");
     if (2%i===0) {
@@ -73,9 +67,16 @@ for (var i = 0; i < works.length; ++i ) {
     else {
     $(images[i]).css("border", "2px solid DodgerBlue");
   };
+    $(".work-img").mouseenter( function() {
+    $(".info", this).show();
+  }).mouseleave(function () {
+    $(".info", this).hide();
+  });
 };
     return false;
 });
+
+
 
 
 
