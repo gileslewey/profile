@@ -154,7 +154,10 @@ margin-right: 4%;
 }
 
 /*Contact Section*/
-
+#map {
+    height: 220px;
+    width: 100%;
+  }
 #contact-text {
   font-size: 1.5em;
 }

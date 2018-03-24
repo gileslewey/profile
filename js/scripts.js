@@ -16,6 +16,22 @@
 js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}    (document, 'script', 'twitter-wjs');
 //</script>
 
+//*Google Maps*
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 40.7385947, lng: -73.9873319},
+    zoom: 17
+  });
+  var image = "img/blue-pushpin.png";
+  var beachMarker = new google.maps.Marker({
+    position: {lat: 40.7385947, lng: -73.9873319},
+    map: map,
+    icon: image
+  });
+}
+
+
 //DOM ready
 $(document).ready(function(){
   $(".message-box").on("keyup", function(){
@@ -49,6 +65,7 @@ $(document).ready(function(){
   //   === ""; if (isMessageBoxEmpty) { $("#text-area").css("border", "2px solid red");
   //   console.log("works"); }
 });
+//*Contact Section*
 
 //*Work Section*
 for (var i = 0; i < works.length; ++i ) {
@@ -72,7 +89,7 @@ for (var i = 0; i < works.length; ++i ) {
   }).mouseleave(function () {
     $(".info", this).hide();
   });
-};
+ };
     return false;
 });
 
