@@ -28,6 +28,7 @@ h2 {
 }
 h3 {
   text-align: center;
+  color: #fff;
 }
 h4 {
   text-align: center;
@@ -116,6 +117,16 @@ button {
   color: #73450C;
 }
 
+#carousel-header {
+  color: #FFF;
+  font-size: 3.5em;
+  text-shadow:-1.5px 0 #73450C, 0 1.5px #73450C, 1.5px 0 #73450C, 0 -1.5px #73450C;
+}
+#carousel-header-2 {
+  color: #fff;
+  font-size: 2em;
+  text-shadow:-1.5px 0 #73450C, 0 1.5px #73450C, 1.5px 0 #73450C, 0 -1.5px #73450C;
+}
 /*FAQ Section*/
 
 .panel {
@@ -154,6 +165,7 @@ margin-right: 4%;
 }
 
 /*Contact Section*/
+
 #map {
     height: 220px;
     width: 100%;
@@ -213,32 +225,21 @@ footer {
   margin: 5% 0;
   color: #73450C;
 }
-#about-skills h3 {
-  text-align: center;
-  text-transform: uppercase;
-}
+
 #contact {
-    background-image: url("../img/contact.jpg")
+    background-image: url("../img/gold-back.jpg");
     background-attachment: fixed;
     background-size: cover;
     padding:100px;
     padding-top: 50px;
     height: 100%;
+    width:100%;
 }
 /*#contact-background {
   background-color: #fffeea;
   color: #73450C;-->*/
 }
-#carousel-header {
-  color: #FFF;
-  font-size: 3.5em;
-  text-shadow:-1.5px 0 #73450C, 0 1.5px #73450C, 1.5px 0 #73450C, 0 -1.5px #73450C;
-}
-#carousel-header-2 {
-  color: #fff;
-  font-size: 2em;
-  text-shadow:-1.5px 0 #73450C, 0 1.5px #73450C, 1.5px 0 #73450C, 0 -1.5px #73450C;
-}
+
 #modalembed {
     height: 500px;
     width: 100%;
@@ -278,6 +279,10 @@ footer {
 }
 
 /* About Me */
+#about-skills h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
 .pcolor {
   clear: both;
   color: #73450C;

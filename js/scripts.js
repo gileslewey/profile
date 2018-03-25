@@ -52,18 +52,20 @@ $(document).ready(function(){
 
 
   $("#button").on("click", function() {
-    if ($(".message-box").val() === "") {
-       $("#text-area").css("border", "2px solid red");
-    }
-    else {
-      var comment=$(".message-box").val();
-      $("#visible-comment").html(comment);
-      $(".message-box").hide();
-      $("#message-box").css("border-color", "black");
+    //if ($(".message-box").val() === "") {
+    //   $("#text-area").css("border", "2px solid red");
+    //}
+    var isMessageBoxEmpty = $(".message-box").val()
+    === "";
+  if (isMessageBoxEmpty) { $("#text-area").css("border", "2px solid red");
+    console.log("works"); }
+  else {
+    var comment=$(".message-box").val();
+    $("#visible-comment").html(comment);
+    $(".message-box").hide();
+    $("#message-box").css("border-color", "black");
     };
-  //BETTER WAY  var isMessageBoxEmpty = $(".message-box").val()
-  //   === ""; if (isMessageBoxEmpty) { $("#text-area").css("border", "2px solid red");
-  //   console.log("works"); }
+
 });
 //*Contact Section*
 
